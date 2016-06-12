@@ -136,6 +136,10 @@ hr {
     padding-top: 65px;
 }
 
+
+#contactForm {
+    padding: 0 5%;
+}
 .floating-label-form-group {
   position: relative;
   margin-bottom: 0;
@@ -212,6 +216,7 @@ form .row:first-child .floating-label-form-group {
   font-size: 20px;
   line-height: 45px;
 }
+.btn,
 .btn:focus,
 .btn:active,
 .btn.active {
