@@ -102,6 +102,10 @@ hr {
     margin: 0 auto 0;
 }
 
+.img-thumb {
+    max-width: 250px;
+}
+
 /******************************* My Additions *********************************/
 
 .my-section {
@@ -109,7 +113,7 @@ hr {
 
 .expanded-box {
     max-width: 650px;
-    margin: 325px auto 275px auto;
+    margin: 200px auto 170px auto;
     padding: 10px;
     background: transparent;
     background: rgba(255,255,255,0.5);
@@ -135,7 +139,6 @@ hr {
 .my-section3 {
     padding-top: 65px;
 }
-
 
 #contactForm {
     padding: 0 5%;
@@ -260,6 +263,10 @@ footer p {
         margin-right: 25px;
     }
 
+    .img-thumb {
+        max-width: 400px;
+    }
+
     .address-bar {
         display: inherit;
         margin: 0;
@@ -332,5 +339,17 @@ footer p {
         content: '';
         display: table;
         clear: both;
+    }
+}
+
+@media screen and (min-height:500px) {
+    .expanded-box {
+        margin: 325px auto 275px auto;
+    }
+}
+
+@media screen and (min-height:900px) {
+    .expanded-box {
+        margin: 500px auto 425px auto;
     }
 }
