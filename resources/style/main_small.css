@@ -69,6 +69,11 @@
         display: block;
     }
 
+    #resume_page_inner_container {
+        padding: 25px 10px;
+        box-sizing: border-box;
+    }
+
     .visible-xs {
         display: block !important;
     }
