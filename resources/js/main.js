@@ -35,7 +35,6 @@ function setup() {
     document.getElementById("nav_bar_title").addEventListener("click", function(e) {
         open_page("home_page");
     })
-    // document.getElementById("home_page").style.transform = "translateX(" + window.innerWidth + "px)";
     open_page("home_page");
 }
 
@@ -57,7 +56,7 @@ function open_page(page_name) {
     var nav_bar_items = document.getElementsByClassName("nav_bar_item");
 
     for (var i = 0; i < pages.length; i++) {
-        if (window.innerWidth > 767) {
+        if (window.innerWidth > 813) {
             if (i < index) {
                 pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
             } else if (i > index) {
@@ -74,7 +73,7 @@ function open_page(page_name) {
         for (var i = 0; i < pages.length; i++) {
             if (index != i) {
                 pages[i].classList.add("display_none");
-                if (window.innerWidth > 767) {
+                if (window.innerWidth > 813) {
                     if (i < index) {
                         pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
                     } else if (i > index) {
