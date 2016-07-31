@@ -7,7 +7,7 @@ html, body {
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../media/bg.png') no-repeat center center fixed;
+    background: #ccc;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
