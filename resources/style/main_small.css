@@ -57,6 +57,10 @@
         background: #e7e7e7;
     }
 
+    .page {
+        transition: all 0.5s;
+    }
+
     #about_page {
         display: block;
     }
