@@ -62,14 +62,14 @@ function hotkey_setup() {
 function hammer_setup() {
     var hammertime = new Hammer(document.body);
     hammertime.on('swiperight', function(e) {
-        open_page(cur_page_num - 1);
+        open_page(cur_page_num - 1, true);
     });
     hammertime.on('swipeleft', function(e) {
-        open_page(cur_page_num + 1);
+        open_page(cur_page_num + 1, true);
     });
 }
 
-function open_page(page_val) {
+function open_page(page_val, swipe) {
     var page_name = page_val;
     var pages = document.getElementsByClassName("page");
 
@@ -96,7 +96,7 @@ function open_page(page_val) {
     cur_page_num = index;
 
     for (var i = 0; i < pages.length; i++) {
-        if (window.innerWidth > 813) {
+        if (window.innerWidth > 813 || swipe) {
             if (i < index) {
                 pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
             } else if (i > index) {
@@ -115,7 +115,7 @@ function open_page(page_val) {
         for (var i = 0; i < pages.length; i++) {
             if (index != i) {
                 pages[i].classList.add("display_none");
-                if (window.innerWidth > 813) {
+                if (window.innerWidth > 813 || swipe) {
                     if (i < index) {
                         pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
                     } else if (i > index) {
