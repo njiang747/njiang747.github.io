@@ -1,4 +1,8 @@
 @media (max-width: 813px) {
+    body {
+        background: #ccc;
+    }
+
     #content {
         padding: 0;
     }
