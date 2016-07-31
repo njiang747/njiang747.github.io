@@ -3,7 +3,7 @@ var cur_page_num = 0;
 
 window.onload = function() {
     hotkey_setup();
-    // hammer_setup();
+    hammer_setup();
     setup();
 }
 
