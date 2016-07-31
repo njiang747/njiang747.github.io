@@ -96,15 +96,15 @@ function open_page(page_val) {
     cur_page_num = index;
 
     for (var i = 0; i < pages.length; i++) {
-        if (window.innerWidth > 813) {
+        // if (window.innerWidth > 813) {
             if (i < index) {
                 pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
             } else if (i > index) {
                 pages[i].style.transform = "translateX(" + window.innerWidth + "px)";
             }
-        } else {
-            pages[i].classList.add("transparent");
-        }
+        // } else {
+        //     pages[i].classList.add("transparent");
+        // }
     }
 
     for (var i = 0; i < nav_bar_items.length; i++) {
@@ -115,13 +115,13 @@ function open_page(page_val) {
         for (var i = 0; i < pages.length; i++) {
             if (index != i) {
                 pages[i].classList.add("display_none");
-                if (window.innerWidth > 813) {
+                // if (window.innerWidth > 813) {
                     if (i < index) {
                         pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
                     } else if (i > index) {
                         pages[i].style.transform = "translateX(" + window.innerWidth + "px)";
                     }
-                }
+                // }
             }
         }
 
