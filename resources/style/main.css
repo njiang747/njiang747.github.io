@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
     transform-style: preserve-3d;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 body {
