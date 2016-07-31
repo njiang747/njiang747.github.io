@@ -35,6 +35,10 @@ function setup() {
     document.getElementById("nav_bar_title").addEventListener("click", function(e) {
         open_page("home_page");
     })
+    if (window.innerWidth <= 813) {
+        var bg = document.getElementById("bg");
+        bg.height = (bg.innerHeight + 60) + "px";
+    }
     open_page("home_page");
 }
 
