@@ -27,6 +27,7 @@ body {
     min-height: 100%;
     overflow: hidden;
     z-index: -1;
+    transition: all 0.5s;
 }
 
 h1, 
