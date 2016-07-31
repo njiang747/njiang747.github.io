@@ -37,7 +37,7 @@ function setup() {
     })
     if (window.innerWidth <= 813) {
         var bg = document.getElementById("bg");
-        bg.height = (bg.innerHeight + 60) + "px";
+        bg.style.height = (bg.offsetHeight + 60) + "px";
     }
     open_page("home_page");
 }
