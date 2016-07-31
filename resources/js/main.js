@@ -38,6 +38,7 @@ function setup() {
     if (window.innerWidth <= 813) {
         var bg = document.getElementById("bg");
         bg.style.height = (bg.offsetHeight + 60) + "px";
+        document.getElementById("nav_bar_title").innerHTML = (bg.offsetHeight + 60) + "px";
     }
     open_page("home_page");
 }
