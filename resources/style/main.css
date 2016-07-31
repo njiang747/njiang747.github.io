@@ -162,7 +162,7 @@ p {
 }
 
 #resume_page_inner_container {
-    padding: 25px 50px;
+    padding: 25px 60px;
     box-sizing: border-box;
 }
 
@@ -179,6 +179,12 @@ p {
 #resume_page_inner_container p {
     margin-left: 50px;
     margin-bottom: 10px;
+    text-align: justify;
+}
+
+#resume_page_inner_container p a {
+    text-decoration: none;
+    color: #3ba9b1;
 }
 
 #contact_page_container {
