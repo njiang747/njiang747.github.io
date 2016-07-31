@@ -57,11 +57,14 @@ function open_page(page_name) {
     var nav_bar_items = document.getElementsByClassName("nav_bar_item");
 
     for (var i = 0; i < pages.length; i++) {
-        // pages[i].classList.add("transparent");
-        if (i < index) {
-            pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
-        } else if (i > index) {
-            pages[i].style.transform = "translateX(" + window.innerWidth + "px)";
+        if (window.innerWidth > 767) {
+            if (i < index) {
+                pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
+            } else if (i > index) {
+                pages[i].style.transform = "translateX(" + window.innerWidth + "px)";
+            }
+        } else {
+            pages[i].classList.add("transparent");
         }
     }
     for (var i = 0; i < nav_bar_items.length; i++) {
@@ -71,10 +74,12 @@ function open_page(page_name) {
         for (var i = 0; i < pages.length; i++) {
             if (index != i) {
                 pages[i].classList.add("display_none");
-                if (i < index) {
-                    pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
-                } else if (i > index) {
-                    pages[i].style.transform = "translateX(" + window.innerWidth + "px)";
+                if (window.innerWidth > 767) {
+                    if (i < index) {
+                        pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
+                    } else if (i > index) {
+                        pages[i].style.transform = "translateX(" + window.innerWidth + "px)";
+                    }
                 }
             }
         }
