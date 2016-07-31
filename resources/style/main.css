@@ -1,18 +1,32 @@
 html, body {
     width: 100%;
     height: 100%;
-    height: calc(100%);
     margin: 0;
     transform-style: preserve-3d;
 }
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../media/bg.png') no-repeat center fixed;
+    /*background: url('../media/bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;*/
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    background: url('../media/bg.png') center top; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    z-index: -1;
 }
 
 h1, 
@@ -44,10 +58,6 @@ p {
     font-size: 1.1em;
     line-height: 1.6;
     margin: 0;
-}
-
-img {
-    max-width: 100%;
 }
 
 #nav_bar {
@@ -155,6 +165,7 @@ img {
 }
 
 .img-border {
+    max-width: 100%; /* move this later */
     border: 1px solid #888;
 }
 
