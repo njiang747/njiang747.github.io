@@ -87,6 +87,7 @@
     #resume_page_inner_container p {
         margin-left: 20px;
         margin-bottom: 10px;
+        text-align: left !important;
     }
 
     .visible-xs {
