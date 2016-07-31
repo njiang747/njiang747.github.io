@@ -99,8 +99,10 @@ function open_page(page_val, swipe) {
         if (window.innerWidth > 813 || swipe) {
             if (i < index) {
                 pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
+                pages[i].style.marginLeft = "-" + window.innerWidth + "px";
             } else if (i > index) {
                 pages[i].style.transform = "translateX(" + window.innerWidth + "px)";
+                pages[i].style.marginRight = "-" + window.innerWidth + "px";
             }
         } else {
             pages[i].classList.add("transparent");
@@ -118,8 +120,10 @@ function open_page(page_val, swipe) {
                 if (window.innerWidth > 813 || swipe) {
                     if (i < index) {
                         pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
+                        pages[i].style.marginLeft = "-" + window.innerWidth + "px";
                     } else if (i > index) {
                         pages[i].style.transform = "translateX(" + window.innerWidth + "px)";
+                        pages[i].style.marginRight = "-" + window.innerWidth + "px";
                     }
                 }
             }
@@ -133,6 +137,8 @@ function open_page(page_val, swipe) {
         page.classList.remove("display_none");
         setTimeout(function() {
             page.style.transform = "";
+            page.style.marginLeft = "";
+            page.style.marginRight = "";
             page.classList.remove("transparent");
         }, 50);
     }, 500);
