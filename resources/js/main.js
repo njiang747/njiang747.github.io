@@ -61,10 +61,10 @@ function hotkey_setup() {
 
 function hammer_setup() {
     var hammertime = new Hammer(document.body);
-    hammertime.on('swipeleft', function(e) {
+    hammertime.on('swiperight', function(e) {
         open_page(cur_page_num - 1);
     });
-    hammertime.on('swiperight', function(e) {
+    hammertime.on('swipeleft', function(e) {
         open_page(cur_page_num + 1);
     });
 }
