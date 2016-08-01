@@ -92,7 +92,7 @@
     }
 
     #contact_page_container {
-        height: auto;
+        height: auto !important;
     }
 
     #contact_page_table {
