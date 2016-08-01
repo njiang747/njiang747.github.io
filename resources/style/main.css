@@ -84,10 +84,10 @@ p {
     padding: 5px 35px;
     letter-spacing: 3px;
     font-size: 1.2em;
-    color: #555;
+    color: #777;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.5s, color 0.1s;
     z-index: 10;
 }
 
