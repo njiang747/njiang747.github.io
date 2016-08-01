@@ -63,9 +63,9 @@ function hotkey_setup() {
 }
 
 function hammer_setup() {
-    if (!isMobile()) {
-        return;
-    }
+    // if (!isMobile()) {
+    //     return;
+    // }
     var hammertime = new Hammer(document.body);
     hammertime.on('swiperight', function(e) {
         open_page(cur_page_num - 1, true);
