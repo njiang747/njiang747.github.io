@@ -130,6 +130,7 @@ function open_page(page_val) {
                 }
             }
         }
+        window.scrollTo(0,0);
 
         for (var i = 0; i < nav_bar_items.length; i++) {
             nav_bar_items[i].classList.remove("selected");
