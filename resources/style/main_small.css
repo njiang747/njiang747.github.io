@@ -91,6 +91,10 @@
         text-align: left !important;
     }
 
+    #contact_page_container {
+        height: auto;
+    }
+
     #contact_page_table {
         margin: 0 auto;
     }
@@ -102,7 +106,7 @@
     .img-circle {
         float: none !important;
         display: block;
-        margin: 30px auto 20px;
+        margin: 20px auto 10px;
     }
 
     .img-left,
