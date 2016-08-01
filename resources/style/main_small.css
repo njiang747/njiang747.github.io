@@ -65,7 +65,8 @@
         transition: all 0.5s;
     }
 
-    #about_page {
+    #about_page,
+    #contact_page_inner_container {
         display: block;
     }
 
@@ -90,8 +91,18 @@
         text-align: left !important;
     }
 
+    #contact_page_table {
+        margin: 0 auto;
+    }
+
     .visible-xs {
         display: block !important;
+    }
+    
+    .img-circle {
+        float: none !important;
+        display: block;
+        margin: 30px auto 20px;
     }
 
     .img-left,

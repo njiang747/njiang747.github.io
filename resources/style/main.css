@@ -200,6 +200,14 @@ p {
     letter-spacing: 1px;
 }
 
+#contact_page_table {
+    margin-left: 25px;
+}
+
+#contact_page_table td {
+    min-width: 75px;
+}
+
 .mini-title {
     margin-bottom: 20px;
 }
@@ -209,9 +217,13 @@ p {
     margin: 10px auto;
 }
 
+.img-circle {
+    border-radius: 50%;
+    border: 3px solid #3ba9b1;
+}
 .img-border {
     max-width: 100%;
-    border: 1px solid #888;
+    border: 2px solid #3ba9b1;
 }
 
 .img-left {

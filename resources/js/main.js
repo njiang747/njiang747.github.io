@@ -39,14 +39,17 @@ function setup() {
 
     document.getElementById("nav_bar_title").addEventListener("click", function(e) {
         open_page("home_page");
-    })
+    });
 
     if (window.innerWidth <= 813) {
         var bg = document.getElementById("bg");
         bg.style.height = (bg.offsetHeight + 60) + "px";
     }
 
-    open_page("home_page");
+    var start_page = window.location.hash ? window.location.hash.split("#")[1] + "_page" : "home_page";
+    document.getElementById(start_page).classList.add("transparent");
+
+    open_page(start_page);
 }
 
 function hotkey_setup() {
@@ -139,6 +142,8 @@ function open_page(page_val) {
             page.classList.remove("transparent");
         }, 50);
     }, 500);
+
+    window.location.hash = "#" + page_name.split("_page")[0];
 }
 
 function isMobile() {
