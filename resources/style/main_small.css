@@ -71,7 +71,7 @@
     }
 
     #resume_page_inner_container {
-        padding: 25px 0;
+        padding: 0 0 25px;
         box-sizing: border-box;
     }
 
@@ -86,7 +86,7 @@
     }
 
     #resume_page_inner_container p {
-        margin-left: 20px;
+        margin-left: 0;
         margin-bottom: 10px;
         text-align: left !important;
     }
@@ -97,6 +97,10 @@
 
     #contact_page_table {
         margin: 0 auto;
+    }
+
+    .visible-l {
+        display: none !important;
     }
 
     .visible-xs {

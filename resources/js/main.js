@@ -100,17 +100,14 @@ function open_page(page_val) {
     var nav_bar_items = document.getElementsByClassName("nav_bar_item");
     cur_page = page_name;
     cur_page_num = index;
+    document.getElementById("content").classList.add("hide_over_x");
 
     for (var i = 0; i < pages.length; i++) {
-        // if (window.innerWidth > 813) {
-            if (i < index) {
-                pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
-            } else if (i > index) {
-                pages[i].style.transform = "translateX(" + window.innerWidth + "px)";
-            }
-        // } else {
-        //     pages[i].classList.add("transparent");
-        // }
+        if (i < index) {
+            pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
+        } else if (i > index) {
+            pages[i].style.transform = "translateX(" + window.innerWidth + "px)";
+        }
     }
 
     for (var i = 0; i < nav_bar_items.length; i++) {
@@ -121,16 +118,14 @@ function open_page(page_val) {
         for (var i = 0; i < pages.length; i++) {
             if (index != i) {
                 pages[i].classList.add("display_none");
-                // if (window.innerWidth > 813) {
-                    if (i < index) {
-                        pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
-                    } else if (i > index) {
-                        pages[i].style.transform = "translateX(" + window.innerWidth + "px)";
-                    }
-                // }
+                if (i < index) {
+                    pages[i].style.transform = "translateX(-" + window.innerWidth + "px)";
+                } else if (i > index) {
+                    pages[i].style.transform = "translateX(" + window.innerWidth + "px)";
+                }
             }
         }
-        window.scrollTo(0,0);
+        // window.scrollTo(0,0);
 
         for (var i = 0; i < nav_bar_items.length; i++) {
             nav_bar_items[i].classList.remove("selected");

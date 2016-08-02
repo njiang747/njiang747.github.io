@@ -108,9 +108,8 @@ p {
     height: 100%;
     padding: 0 40px;
     box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
 }
 
 .page {
