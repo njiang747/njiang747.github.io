@@ -144,6 +144,11 @@ p {
     align-items: center;
 }
 
+#home_page .container,
+#contact_page .container {
+    margin-bottom: 0px;
+}
+
 #home_page_container {
     padding: 10px 25px;
 }
