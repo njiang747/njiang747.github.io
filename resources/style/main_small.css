@@ -4,7 +4,16 @@
     }
 
     #content {
-        padding: 0;
+        padding: 40px 0 0;
+    }
+
+    .page {
+        transition: all 0.5s;
+        padding-top: 0;
+    }
+
+    .container {
+        margin-bottom: 0;
     }
 
     #nav_bar {
@@ -59,10 +68,6 @@
 
     .nav_bar_item.selected {
         background: #e7e7e7;
-    }
-
-    .page {
-        transition: all 0.5s;
     }
 
     #about_page,
