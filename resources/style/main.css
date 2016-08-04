@@ -106,7 +106,7 @@ p {
 #content {
     width: 100%;
     height: 100%;
-    padding: 0 40px;
+    padding: 40px 40px 0;
     box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
@@ -115,9 +115,9 @@ p {
 .page {
     width: 100%;
     height: 100%;
-    padding-top: 40px;
     box-sizing: border-box;
     transition: all 0.75s;
+    padding-top: 30px;
 }
 
 .page.transparent {
@@ -129,7 +129,7 @@ p {
     max-width: 1200px;
     width: 100%;
     padding: 20px 30px;
-    margin: 20px auto 40px;
+    margin: 0 auto 30px;
     box-sizing: border-box;
 }
 
@@ -137,11 +137,11 @@ p {
     font-weight: 400;
 }
 
-#home_page {
+#home_page,
+#contact_page {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 #home_page_container {
@@ -158,9 +158,27 @@ p {
     font-size: 2.2em;
 }
 
+#resume_page_container {
+    position: relative;
+}
 
-#about_page_container {
-    min-height: 90%;
+#resume_page_download_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    margin-top: 30px;
+    background: url('../media/download.png') no-repeat;
+    background-size: contain;
+}
+
+#resume_page_download_button:hover {
+    background: url('../media/download_hover.png') no-repeat;
+    background-size: contain;
 }
 
 #resume_page_inner_container {
