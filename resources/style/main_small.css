@@ -9,7 +9,11 @@
 
     .page {
         transition: all 0.5s;
-        padding-top: 0;
+        padding: 30px 0;
+    }
+
+    .container {
+        margin: 0;
     }
 
     #nav_bar {
