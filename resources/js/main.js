@@ -4,9 +4,10 @@ var cur_page_num = 0;
 window.onload = function() {
     hotkey_setup();
     hammer_setup();
+    document.getElementById("bg").style.backgroundImage = "url('resources/media/bg.gif')";
     setTimeout(function () {
         setup();
-    }, 6500);
+    }, 7000);
 }
 
 function setup() {
