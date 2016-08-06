@@ -7,17 +7,17 @@ html, body {
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../media/bg.png') no-repeat center center fixed;
+    /*background: url('../media/bg.gif') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover;*/
 }
 
 #bg {
     position: fixed;
     top: 0;
-    background: url('../media/bg.png') center top;
+    background: url('../media/bg.gif') center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -300,4 +300,11 @@ p {
 
 .display_none {
     display: none !important;
+}
+
+.unselectable {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

@@ -4,10 +4,14 @@ var cur_page_num = 0;
 window.onload = function() {
     hotkey_setup();
     hammer_setup();
-    setup();
+    setTimeout(function () {
+        setup();
+    }, 6500);
 }
 
 function setup() {
+    document.getElementById("bg").style.backgroundImage = "url('resources/media/bg.png')";
+
     var nav_bar_items = document.getElementsByClassName("nav_bar_item");
     for (var i = 0; i < nav_bar_items.length; i++) {
         nav_bar_items[i].addEventListener("click", function(e) {
