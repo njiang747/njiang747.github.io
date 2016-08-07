@@ -64,10 +64,6 @@ function background_setup() {
        document.getElementById("bg").style.backgroundImage = "url('resources/media/bg.png')";
        return;
     }
-    // setTimeout(function() {
-    //     document.getElementById("nav_bar").classList.remove("transparent");
-    //     document.getElementById("nav_bar").classList.remove("move_up");
-    // }, 100);
     document.getElementById("bg").style.backgroundImage = "url('resources/media/bg.gif')";
     setTimeout(function () {
        document.getElementById("bg").style.backgroundImage = "url('resources/media/bg.png')";
