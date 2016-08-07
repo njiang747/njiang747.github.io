@@ -13,7 +13,7 @@ function setup() {
     if (!window.location.hash || window.location.hash != "#home") {
         delay = 10;
     }
-    setTimeout(function () {
+    setTimeout(function () {    
         var nav_bar_items = document.getElementsByClassName("nav_bar_item");
         for (var i = 0; i < nav_bar_items.length; i++) {
             nav_bar_items[i].addEventListener("click", function(e) {
@@ -64,6 +64,10 @@ function background_setup() {
        document.getElementById("bg").style.backgroundImage = "url('resources/media/bg.png')";
        return;
     }
+    // setTimeout(function() {
+    //     document.getElementById("nav_bar").classList.remove("transparent");
+    //     document.getElementById("nav_bar").classList.remove("move_up");
+    // }, 100);
     document.getElementById("bg").style.backgroundImage = "url('resources/media/bg.gif')";
     setTimeout(function () {
        document.getElementById("bg").style.backgroundImage = "url('resources/media/bg.png')";
@@ -152,6 +156,8 @@ function open_page(page_val) {
 
         page.classList.remove("display_none");
         setTimeout(function() {
+            document.getElementById("nav_bar").classList.remove("transparent");
+            document.getElementById("nav_bar").classList.remove("move_up");
             page.style.transform = "";
             page.classList.remove("transparent");
         }, 50);

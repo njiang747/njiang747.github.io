@@ -76,6 +76,10 @@
         display: block;
     }
 
+    #about_page_inner_container p {
+        text-align: left !important;
+    }
+
     #resume_page_inner_container {
         padding: 0 0 25px;
         box-sizing: border-box;
