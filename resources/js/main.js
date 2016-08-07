@@ -10,7 +10,7 @@ window.onload = function() {
 
 function setup() {
     var delay = 3000;
-    if (!window.location.hash || window.location.hash != "#home") {
+    if (window.location.hash && window.location.hash != "#home") {
         delay = 10;
     }
     setTimeout(function () {    
