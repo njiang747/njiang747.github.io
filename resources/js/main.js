@@ -4,57 +4,70 @@ var cur_page_num = 0;
 window.onload = function() {
     hotkey_setup();
     hammer_setup();
-    document.getElementById("bg").style.backgroundImage = "url('resources/media/bg.gif')";
-    setTimeout(function () {
-        setup();
-    }, 7000);
+    background_setup();
+    setup();
 }
 
 function setup() {
-    document.getElementById("bg").style.backgroundImage = "url('resources/media/bg.png')";
-
-    var nav_bar_items = document.getElementsByClassName("nav_bar_item");
-    for (var i = 0; i < nav_bar_items.length; i++) {
-        nav_bar_items[i].addEventListener("click", function(e) {
-            var nav_bar_inner = document.getElementById("nav_bar_inner");
-            nav_bar_inner.classList.remove("regular");
-            setTimeout(function() {
-                nav_bar_inner.classList.add("display_none_xs");
-            }, 500);
-
-            var page_name = e.target.getAttribute("value");
-            open_page(page_name);
-        })
+    var delay = 3000;
+    if (!window.location.hash || window.location.hash != "#home") {
+        delay = 10;
     }
+    setTimeout(function () {
+        var nav_bar_items = document.getElementsByClassName("nav_bar_item");
+        for (var i = 0; i < nav_bar_items.length; i++) {
+            nav_bar_items[i].addEventListener("click", function(e) {
+                var nav_bar_inner = document.getElementById("nav_bar_inner");
+                nav_bar_inner.classList.remove("regular");
+                setTimeout(function() {
+                    nav_bar_inner.classList.add("display_none_xs");
+                }, 500);
 
-    document.getElementById("nav_bar_mobile_button").addEventListener("click", function(e) {
-        var nav_bar_inner = document.getElementById("nav_bar_inner");
-        if (nav_bar_inner.offsetHeight == 0) {
-            nav_bar_inner.classList.remove("display_none_xs");
-            setTimeout(function() {
-                nav_bar_inner.classList.add("regular");
-            }, 10);
-        } else {
-            nav_bar_inner.classList.remove("regular");
-            setTimeout(function() {
-                nav_bar_inner.classList.add("display_none_xs");
-            }, 500);
+                var page_name = e.target.getAttribute("value");
+                open_page(page_name);
+            })
         }
-    });
 
-    document.getElementById("nav_bar_title").addEventListener("click", function(e) {
-        open_page("home_page");
-    });
+        document.getElementById("nav_bar_mobile_button").addEventListener("click", function(e) {
+            var nav_bar_inner = document.getElementById("nav_bar_inner");
+            if (nav_bar_inner.offsetHeight == 0) {
+                nav_bar_inner.classList.remove("display_none_xs");
+                setTimeout(function() {
+                    nav_bar_inner.classList.add("regular");
+                }, 10);
+            } else {
+                nav_bar_inner.classList.remove("regular");
+                setTimeout(function() {
+                    nav_bar_inner.classList.add("display_none_xs");
+                }, 500);
+            }
+        });
 
-    if (window.innerWidth <= 813) {
-        var bg = document.getElementById("bg");
-        bg.style.height = (bg.offsetHeight + 60) + "px";
+        document.getElementById("nav_bar_title").addEventListener("click", function(e) {
+            open_page("home_page");
+        });
+
+        if (window.innerWidth <= 813) {
+            var bg = document.getElementById("bg");
+            bg.style.height = (bg.offsetHeight + 60) + "px";
+        }
+
+        var start_page = window.location.hash ? window.location.hash.split("#")[1] + "_page" : "home_page";
+        document.getElementById(start_page).classList.add("transparent");
+
+        open_page(start_page);
+    }, delay);
+}
+
+function background_setup() {
+    if (window.location.hash && window.location.hash != "#home") {
+       document.getElementById("bg").style.backgroundImage = "url('resources/media/bg.png')";
+       return;
     }
-
-    var start_page = window.location.hash ? window.location.hash.split("#")[1] + "_page" : "home_page";
-    document.getElementById(start_page).classList.add("transparent");
-
-    open_page(start_page);
+    document.getElementById("bg").style.backgroundImage = "url('resources/media/bg.gif')";
+    setTimeout(function () {
+       document.getElementById("bg").style.backgroundImage = "url('resources/media/bg.png')";
+    }, 5000)
 }
 
 function hotkey_setup() {
