@@ -171,6 +171,30 @@ p {
     text-align: justify;
 }
 
+#about_page_container p .tooltip {
+    position: relative;
+    color: #007F00;
+}
+
+#about_page_container p .tooltip .tooltip_text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform:translateX(-50%);
+    padding: 2px 8px;
+    border-radius: 5px;
+    background-color: #66cc00;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#about_page_container p .tooltip:hover .tooltip_text {
+    visibility: visible;
+}
+
 #about_page_pic {
     max-width: 300px; 
     border: 2px solid #555;
@@ -227,6 +251,10 @@ p {
 #resume_page_inner_container p a {
     text-decoration: none;
     color: #3ba9b1;
+}
+
+#resume_page_inner_container p a:hover {
+    color: #236267;
 }
 
 #contact_page_container {

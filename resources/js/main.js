@@ -87,9 +87,17 @@ function hammer_setup() {
     var hammertime = new Hammer(document.body);
     hammertime.on('swiperight', function(e) {
         open_page(cur_page_num - 1, true);
+        nav_bar_inner.classList.remove("regular");
+        setTimeout(function() {
+            nav_bar_inner.classList.add("display_none_xs");
+        }, 500);
     });
     hammertime.on('swipeleft', function(e) {
         open_page(cur_page_num + 1, true);
+        nav_bar_inner.classList.remove("regular");
+        setTimeout(function() {
+            nav_bar_inner.classList.add("display_none_xs");
+        }, 500);
     });
 }
 
@@ -151,6 +159,7 @@ function open_page(page_val) {
         document.getElementById(page_name + "_nav_item").classList.add("selected");
 
         page.classList.remove("display_none");
+        document.getElementById("nav_bar").classList.remove("display_none");
         setTimeout(function() {
             document.getElementById("nav_bar").classList.remove("transparent");
             document.getElementById("nav_bar").classList.remove("move_up");
