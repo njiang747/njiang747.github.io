@@ -1,11 +1,11 @@
 var cur_page;
 var cur_page_num = 0;
-var popup_transition;
 
 window.onload = function() {
     hotkey_setup();
     hammer_setup();
     background_setup();
+    popup_setup();
     setup();
 }
 
@@ -52,27 +52,6 @@ function setup() {
             var bg = document.getElementById("bg");
             bg.style.height = (bg.offsetHeight + 60) + "px";
         }
-
-        // Mouseover effects
-        document.getElementById("starry_text").addEventListener("mouseenter", function(e) {
-            var popup = document.getElementById("popup");
-            popup.style.backgroundImage = "url('resources/media/starry_night.jpg')";
-            document.getElementById("all").classList.add("blur");
-            popup.classList.remove("display_none");
-            clearTimeout(popup_transition);
-            popup_transition = setTimeout(function() {
-                popup.classList.remove("transparent");
-            }, 10);
-        });
-        document.getElementById("starry_text").addEventListener("mouseleave", function(e) {
-            var popup = document.getElementById("popup");
-            document.getElementById("all").classList.remove("blur");
-            popup.classList.add("transparent");
-            clearTimeout(popup_transition);
-            popup_transition = setTimeout(function() {
-                popup.classList.add("display_none");
-            }, 500);
-        });
 
         // Open the start page
         var start_page = window.location.hash ? window.location.hash.split("#")[1] + "_page" : "home_page";

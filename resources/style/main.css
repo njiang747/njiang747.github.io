@@ -15,13 +15,15 @@ body {
 }
 
 #all {
+    width: 100%;
+    height: 100%;
     transition: all 0.5s;
 }
 
 #bg {
     position: fixed;
     top: 0;
-    background: #fff center top; /*url('../media/bg.gif')*/
+    background: #fff center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -67,6 +69,10 @@ p {
 a {
     text-decoration: none;
     color: #3ba9b1;
+}
+
+a:hover {
+    color: #236267;
 }
 
 #nav_bar {
@@ -185,6 +191,10 @@ a {
     color: #007F00;
 }
 
+#about_page_container p .tooltip:hover {
+    color: #005500;
+}
+
 #about_page_container p .tooltip .tooltip_text {
     visibility: hidden;
     position: absolute;
@@ -211,6 +221,16 @@ a {
 
 .project-pane {
     margin-top: 30px;
+}
+
+.project-pane img {
+    margin-top: 15px;
+}
+
+#starry_text {
+    font-style: italic;
+    /*font-weight: bold;*/
+    color: #314b9f;
 }
 
 #resume_page_container {
@@ -257,10 +277,6 @@ a {
     text-align: justify;
 }
 
-#resume_page_inner_container p a:hover {
-    color: #236267;
-}
-
 #contact_page_container {
     height: 90%;
     min-height: 90%;
@@ -301,17 +317,12 @@ a {
 }
 .img-border {
     max-width: 100%;
-    border: 2px solid #3ba9b1;
+    border: 3px solid #3ba9b1;
 }
 
 .img-left {
     float: left;
     margin-right: 25px;
-}
-
-.img-right {
-    float: right;
-    margin-left: 25px;
 }
 
 .img-medium {
@@ -372,5 +383,5 @@ a {
     background-size: contain;
     pointer-events:none;
     z-index: 10;
-    transition: all 0.5s;
+    transition: opacity 0.5s;
 }
