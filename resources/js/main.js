@@ -1,5 +1,6 @@
 var cur_page;
 var cur_page_num = 0;
+var popup_transition;
 
 window.onload = function() {
     hotkey_setup();
@@ -58,11 +59,19 @@ function setup() {
             popup.style.backgroundImage = "url('resources/media/starry_night.jpg')";
             document.getElementById("all").classList.add("blur");
             popup.classList.remove("display_none");
+            clearTimeout(popup_transition);
+            popup_transition = setTimeout(function() {
+                popup.classList.remove("transparent");
+            }, 10);
         });
         document.getElementById("starry_text").addEventListener("mouseleave", function(e) {
             var popup = document.getElementById("popup");
             document.getElementById("all").classList.remove("blur");
-            popup.classList.add("display_none");
+            popup.classList.add("transparent");
+            clearTimeout(popup_transition);
+            popup_transition = setTimeout(function() {
+                popup.classList.add("display_none");
+            }, 500);
         });
 
         // Open the start page

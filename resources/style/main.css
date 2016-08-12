@@ -14,6 +14,10 @@ body {
     -o-background-size: cover;
 }
 
+#all {
+    transition: all 0.5s;
+}
+
 #bg {
     position: fixed;
     top: 0;
@@ -348,7 +352,7 @@ a {
 }
 
 .blur {
-    -webkit-filter: blur(10px) grayscale(20%);
+    -webkit-filter: blur(10px);
 }
 
 .unselectable {
@@ -366,5 +370,7 @@ a {
     left: 5%;
     background: transparent center no-repeat;
     background-size: contain;
+    pointer-events:none;
     z-index: 10;
+    transition: all 0.5s;
 }
