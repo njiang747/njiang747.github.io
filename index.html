@@ -16,251 +16,254 @@
 </head>
 
 <body>
-    <div id="bg"></div>
-    <div id="nav_bar" class="display_none transparent move_up">
-        <div id="nav_bar_title" class="visible-xs">
-            Nick Jiang
-        </div>
-        <div id="nav_bar_mobile_button"" class="visible-xs"></div>
-        <div id="nav_bar_inner">
-            <div id="home_page_nav_item" class="nav_bar_item unselectable" value="home_page">
-                Home
+    <div id="popup" class="display_none"></div>
+    <div id="all">
+        <div id="bg"></div>
+        <div id="nav_bar" class="display_none transparent move_up">
+            <div id="nav_bar_title" class="visible-xs">
+                Nick Jiang
             </div>
-            <div id="about_page_nav_item" class="nav_bar_item unselectable" value="about_page">
-                About
-            </div>
-            <div id="project_page_nav_item" class="nav_bar_item unselectable" value="project_page">
-                Projects
-            </div>
-            <div id="resume_page_nav_item" class="nav_bar_item unselectable" value="resume_page">
-                Resume
-            </div>
-            <div id="contact_page_nav_item" class="nav_bar_item unselectable" value="contact_page">
-                Contact
-            </div>
-        </div>
-    </div>
-    <div id="content">
-        <div id="home_page" class="page center-page transparent display_none" index=0>
-            <div id="home_page_container" class="medium container">
-                <hr>
-                <h2 class="title-text text-center">Nick Jiang</h2>
-                <h5 class="text-center">B.S.E. Computer Science, Princeton University '18</h5>
-                <hr>
+            <div id="nav_bar_mobile_button"" class="visible-xs"></div>
+            <div id="nav_bar_inner">
+                <div id="home_page_nav_item" class="nav_bar_item unselectable" value="home_page">
+                    Home
+                </div>
+                <div id="about_page_nav_item" class="nav_bar_item unselectable" value="about_page">
+                    About
+                </div>
+                <div id="project_page_nav_item" class="nav_bar_item unselectable" value="project_page">
+                    Projects
+                </div>
+                <div id="resume_page_nav_item" class="nav_bar_item unselectable" value="resume_page">
+                    Resume
+                </div>
+                <div id="contact_page_nav_item" class="nav_bar_item unselectable" value="contact_page">
+                    Contact
+                </div>
             </div>
         </div>
-        <div id="about_page" class="page display_none" index=1>
-            <div id="about_page_container" class="container">
-                <hr>
-                <h2 class="title-text text-center">About</h2>
-                <hr>
-                <img id="about_page_pic" class="img-border img-left" src="resources/media/portrait.jpg" alt="">
-                <hr class="visible-xs">
-                <p>I'm Nick Jiang, a junior at Princeton University concentrating in Computer Science with a certificate in Finance. Currently, I'm working as a Cyber Summer Associate at Stroz Friedberg in Boston, MA where I research technical patents and prior art for intellectual property litigation and develop proprietary code comparison tools for use in such cases.</p>
-                <p>I love to code and create &ndash; new applications, tools, whatever! The feeling of taking a project from the idea stage all the way through its realization drives my passion for programming. Whether attempting to recreate Pokémon in my first year of Java in high school or integrating Electric Imp hardware sensors with a Meteor web application at 5am for a hackathon, I always seem to lose track of the hours that go by as I'm coding.</p>
-                <p>Offline, I enjoy playing tennis, ping pong, and piano as well as taking care of my wide <span class="tooltip">array<span class="tooltip_text">Plant[] plants</span></span> of plants ranging from <span class="tooltip">basil<span class="tooltip_text">plants[0]</span></span> to <span class="tooltip">bromeliads<span class="tooltip_text">plants[plants.length - 1]</span></span>.</p>
-                <div class="spacer"></div>
-            </div>
-        </div>
-        <div id="project_page" class="page display_none" index=2>
-            <div id="project_page_container">
-                <div class="container">
+        <div id="content">
+            <div id="home_page" class="page center-page transparent display_none" index=0>
+                <div id="home_page_container" class="medium container">
                     <hr>
-                    <h2 class="title-text text-center">Projects</h2>
+                    <h2 class="title-text text-center">Nick Jiang</h2>
+                    <h5 class="text-center">B.S.E. Computer Science, Princeton University '18</h5>
                     <hr>
                 </div>
-
-                <div class="container project-pane">
-                    <img class="img-border img-left img-medium" src="resources/media/pic2paint.png" alt="">
-                    <div class="mini-title">
-                        <hr>
-                        <h4 class="title-text text-center">Pic&thinsp;2&thinsp;Paint</h4>
-                        <hr>
-                    </div>
-                    <p>Pic 2 Paint is a web application I developed for the open final assignment in my Computer Graphics class last semester. The inspiration for this project came from expressionistic paintings, particularly Vincent Van Gogh's <i>Starry Night</i>. </p>
-                    <p>The tool renders pictures in a variety of painted styles and indeed was used to create the background for this website. It also creates GIFs to visualize the process of painting the digital canvas in multiple layers of strokes.</p>
-                    <p>Feel free to try out the tool for yourself <a href="Painting426">here</a>, check out the <a href="Painting426/gallery.html">gallery</a> of examples, or read my <a href="resources/media/pic2paint.pdf">writeup</a> of the process and algorithm.</p>
-                    <div class="spacer"></div>
-                </div>
-                <div class="container project-pane">
-                    <img class="img-border img-left img-medium" src="resources/media/kweri.png" alt="">
-                    <div class="mini-title">
-                        <hr>
-                        <h4 class="title-text text-center">Kweri</h4>
-                        <hr>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                    <div class="spacer"></div>
-                </div>
-                <div class="container project-pane">
-                    <img class="img-border img-left img-medium" src="resources/media/free-space.jpg" alt="">
-                    <div class="mini-title">
-                        <hr>
-                        <h4 class="title-text text-center">Free-Space</h4>
-                        <hr>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+            <div id="about_page" class="page display_none" index=1>
+                <div id="about_page_container" class="container">
+                    <hr>
+                    <h2 class="title-text text-center">About</h2>
+                    <hr>
+                    <img id="about_page_pic" class="img-border img-left" src="resources/media/portrait.jpg" alt="">
+                    <hr class="visible-xs">
+                    <p>I'm Nick Jiang, a junior at Princeton University concentrating in Computer Science with a certificate in Finance. Currently, I'm working as a Cyber Summer Associate at Stroz Friedberg in Boston, MA where I research technical patents and prior art for intellectual property litigation and develop proprietary code comparison tools for use in such cases.</p>
+                    <p>I love to code and create &ndash; new applications, tools, whatever! The feeling of taking a project from the idea stage all the way through its realization drives my passion for programming. Whether attempting to recreate Pokémon in my first year of Java in high school or integrating Electric Imp hardware sensors with a Meteor web application at 5am for a hackathon, I always seem to lose track of the hours that go by as I'm coding.</p>
+                    <p>Offline, I enjoy playing tennis, ping pong, and piano as well as taking care of my wide <span class="tooltip">array<span class="tooltip_text">Plant[] plants</span></span> of plants ranging from <span class="tooltip">basil<span class="tooltip_text">plants[0]</span></span> to <span class="tooltip">bromeliads<span class="tooltip_text">plants[plants.length - 1]</span></span>.</p>
                     <div class="spacer"></div>
                 </div>
             </div>
-        </div>
-
-        <div id="resume_page" class="page display_none" index=3>
-            <div id="resume_page_container" class="container">
-                <!-- <a href="resources/media/resume.pdf"><div id="resume_page_download_button"></div></a> -->
-                <hr class="mini-title">
-                <h2 class="title-text text-center">Resume</h2>
-                <hr class="mini-title">
-                <div id="resume_page_inner_container">
-                    <div class="visible-l">
-                        <div class="resume_section">
-                            Education
-                        </div>
-                        <p>
-                            <b>Princeton University</b> | Princeton, NJ | 2014-2018<br>
-                            <i>B.S.E. Computer Science Major</i>, GPA: 3.9<br>
-                            Coursework includes: Data Structures &amp; Algorithms; Systems Programming; Functional Programming; Computer Graphics; Computer Networks; Discrete Mathematics; Advanced Vector Calculus; Advanced Linear Algebra
-                        </p>
-                        <p>
-                            <b>Milton Academy</b> | Milton, MA | 2010 - 2014<br>
-                            Cum Laude Society; Duncan Prize for Mathematics; Science Prize; National Merit Finalist<br>
-                            SAT I (Reading, Math, Writing): 800, 800, 800<br>
-                            SAT II: Chemistry: 800, Mathematics Level 2: 800, Mathematics Level 1: 800
-                        </p>
-                        <div class="resume_section">
-                            Experience
-                        </div>
-                        <p>
-                            <b>Stroz Friedberg</b> | <i>Cyber Summer Associate</i> | Boston, MA | Summer 2016<br>
-                            Worked for Stroz Friedberg, a cybersecurity consulting and risk management firm. Developed proprietary code comparison software for use in intellectual property litigation cases. Researched technical patents and prior art and created tutorials to explain the underlying technologies. 
-                        </p>
-                        <p>
-                            <b>Princeton University</b> | <i>Computer Science Lab TA</i> | Princeton, NJ | Jan 2016 - Present<br>
-                            Hosted weekly lab TA hours for students in the Introduction to Computer Science, Systems Programming, and Data Structures &amp; Algorithms classes. Provided technical help in tackling programming assignments and conceptual assistance in understanding course topics.
-                        </p>
-                        <p>
-                            <b>CIeNET Technologies</b> | <i>Android Developer - Summer Intern</i> | Santa Clara, CA | Summer 2015<br>
-                            Interned for CIeNET Technologies in collaboration with Magnet Systems as a developer to learn, implement, and review the Android side of their in-development mobile communications API. 
-                        </p>
-                        <div class="resume_section">
-                            Projects
-                        </div>
-                        <p>
-                            <a href = "https://github.com/njiang747/Painting426"><b>Pic2Paint</b></a> | COS 426: Computer Graphics | May 2016<br>
-                            Final project that renders pictures in painted styles inspired by a variety of artistic movements. Built upon the framework provided by earlier assignments and based on techniques published in Aaron Hertzmann’s paper, <i>Painterly Rendering with Curved Brush Strokes of Multiple Sizes</i>.
-                        </p>
-                        <p>
-                            <a href = "https://github.com/njiang747/kweri"><b>Kweri</b></a> | COS 333: Advanced Programming Techniques | Spring 2016<br>
-                            Web application built with Meteor, focused on providing streamlined communication between students and professors in the classroom. Personally implemented much of the application logic, database structure, and UI design. 
-                        </p>
-                        <p>
-                            <a href = "https://github.com/ericawu/free-space"><b>Free-Space</b></a> | HackPrinceton | Apr 2016<br>
-                            <i>Winner of the Best Internet of Things Hack Prize</i><br>
-                            Meteor web application that uses modular sensors to deliver real-time information about the availability of study carrels, music practice rooms, and more around campus. Personally focused on the software components, implementing the web layout, underlying logic, and database design. 
-                        </p>
-                        <div class="resume_section">
-                            Skills
-                        </div>
-                        <p>
-                            <b>Languages:</b> Java, C, JavaScript, HTML and CSS, Python, OCaml<br>
-                            <b>Other:</b> Experience with Git, x86-64 Assembly, Meteor, Android
-                        </p>
+            <div id="project_page" class="page display_none" index=2>
+                <div id="project_page_container">
+                    <div class="container">
+                        <hr>
+                        <h2 class="title-text text-center">Projects</h2>
+                        <hr>
                     </div>
-                    <div class="visible-xs">
-                        <div class="resume_section">
-                            Education
+
+                    <div class="container project-pane">
+                        <img class="img-border img-left img-medium" src="resources/media/pic2paint.png" alt="">
+                        <div class="mini-title">
+                            <hr>
+                            <h4 class="title-text text-center">Pic&thinsp;2&thinsp;Paint</h4>
+                            <hr>
                         </div>
-                        <p>
-                            <b>Princeton University</b> | GPA: 3.9<br>
-                            Princeton, NJ | 2014-2018<br>
-                            <i>B.S.E. Computer Science Major</i><br>
-                        </p>
-                        <p>
-                            <b>Milton Academy</b><br>
-                            Milton, MA | 2010 - 2014<br>
-                        </p>
-                        <div class="resume_section">
-                            Experience
+                        <p>Pic 2 Paint is a web application I developed for the open final assignment in my Computer Graphics class last semester. The inspiration for this project came from expressionistic paintings, particularly Vincent Van Gogh's <span><i id="starry_text">Starry Night</i></span>. </p>
+                        <p>The tool renders pictures in a variety of painted styles and indeed was used to create the background for this website. It also creates GIFs to visualize the process of painting the digital canvas in multiple layers of strokes.</p>
+                        <p>Feel free to try out the tool for yourself <a href="Painting426">here</a>, check out the <a href="Painting426/gallery.html">gallery</a> of examples, or read my <a href="resources/media/pic2paint.pdf">writeup</a> of the process and algorithm.</p>
+                        <div class="spacer"></div>
+                    </div>
+                    <div class="container project-pane">
+                        <img class="img-border img-left img-medium" src="resources/media/kweri.png" alt="">
+                        <div class="mini-title">
+                            <hr>
+                            <h4 class="title-text text-center">Kweri</h4>
+                            <hr>
                         </div>
-                        <p>
-                            <b>Stroz Friedberg</b><br>
-                            <i>Cyber Summer Associate</i><br>
-                            Boston, MA | Summer 2016
-                        </p>
-                        <p>
-                            <b>Princeton University</b><br>
-                            <i>Computer Science Lab TA</i><br>
-                            Princeton, NJ | Jan 2016 - Present
-                        </p>
-                        <p>
-                            <b>CIeNET Technologies</b><br>
-                            <i>Android Developer - Summer Intern</i><br>
-                            Santa Clara, CA | Summer 2015
-                        </p>
-                        <div class="resume_section">
-                            Projects
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <div class="spacer"></div>
+                    </div>
+                    <div class="container project-pane">
+                        <img class="img-border img-left img-medium" src="resources/media/free-space.jpg" alt="">
+                        <div class="mini-title">
+                            <hr>
+                            <h4 class="title-text text-center">Free-Space</h4>
+                            <hr>
                         </div>
-                        <p>
-                            <a href = "https://github.com/njiang747/Painting426"><b>Pic2Paint</b></a> | May 2016<br>
-                            COS 426: Computer Graphics
-                        </p>
-                        <p>
-                            <a href = "https://github.com/njiang747/kweri"><b>Kweri</b></a> | Spring 2016<br>
-                            COS 333: Advanced Programming Techniques
-                        </p>
-                        <p>
-                            <a href = "https://github.com/ericawu/free-space"><b>Free-Space</b></a> | Apr 2016<br>
-                            HackPrinceton<br>
-                            <i>Winner of the Best IoT Hack Prize</i>
-                        </p>
-                        <div class="resume_section">
-                            Skills
-                        </div>
-                        <p>
-                            <b>Languages:</b> Java, C, JavaScript, HTML and CSS, Python, OCaml<br>
-                            <b>Other:</b> Experience with Git, x86-64 Assembly, Meteor, Android
-                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <div class="spacer"></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="contact_page" class="page center-page display_none" index=4>
-            <div id="contact_page_container" class="container">
-                <hr>
-                <h2 class="title-text text-center">Contact</h2>
-                <hr>
-                <div id="contact_page_inner_container">
-                    <img id="contact_page_pic" class="img-circle" src="resources/media/portrait_icon.jpg" alt="">
-                    <table id="contact_page_table">
-                        <tr>
-                            <td>
-                                NAME:
-                            </td>
-                            <td>
-                                Nicholas C. Jiang
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                EMAIL:
-                            </td>
-                            <td>
-                                nj3@princeton.edu
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                PHONE:
-                            </td>
-                            <td>
-                                (617) 688&ndash;7474
-                            </td>
-                        </tr>
-                    </table>
+
+            <div id="resume_page" class="page display_none" index=3>
+                <div id="resume_page_container" class="container">
+                    <!-- <a href="resources/media/resume.pdf"><div id="resume_page_download_button"></div></a> -->
+                    <hr class="mini-title">
+                    <h2 class="title-text text-center">Resume</h2>
+                    <hr class="mini-title">
+                    <div id="resume_page_inner_container">
+                        <div class="visible-l">
+                            <div class="resume_section">
+                                Education
+                            </div>
+                            <p>
+                                <b>Princeton University</b> | Princeton, NJ | 2014-2018<br>
+                                <i>B.S.E. Computer Science Major</i>, GPA: 3.9<br>
+                                Coursework includes: Data Structures &amp; Algorithms; Systems Programming; Functional Programming; Computer Graphics; Computer Networks; Discrete Mathematics; Advanced Vector Calculus; Advanced Linear Algebra
+                            </p>
+                            <p>
+                                <b>Milton Academy</b> | Milton, MA | 2010 - 2014<br>
+                                Cum Laude Society; Duncan Prize for Mathematics; Science Prize; National Merit Finalist<br>
+                                SAT I (Reading, Math, Writing): 800, 800, 800<br>
+                                SAT II: Chemistry: 800, Mathematics Level 2: 800, Mathematics Level 1: 800
+                            </p>
+                            <div class="resume_section">
+                                Experience
+                            </div>
+                            <p>
+                                <b>Stroz Friedberg</b> | <i>Cyber Summer Associate</i> | Boston, MA | Summer 2016<br>
+                                Worked for Stroz Friedberg, a cybersecurity consulting and risk management firm. Developed proprietary code comparison software for use in intellectual property litigation cases. Researched technical patents and prior art and created tutorials to explain the underlying technologies. 
+                            </p>
+                            <p>
+                                <b>Princeton University</b> | <i>Computer Science Lab TA</i> | Princeton, NJ | Jan 2016 - Present<br>
+                                Hosted weekly lab TA hours for students in the Introduction to Computer Science, Systems Programming, and Data Structures &amp; Algorithms classes. Provided technical help in tackling programming assignments and conceptual assistance in understanding course topics.
+                            </p>
+                            <p>
+                                <b>CIeNET Technologies</b> | <i>Android Developer - Summer Intern</i> | Santa Clara, CA | Summer 2015<br>
+                                Interned for CIeNET Technologies in collaboration with Magnet Systems as a developer to learn, implement, and review the Android side of their in-development mobile communications API. 
+                            </p>
+                            <div class="resume_section">
+                                Projects
+                            </div>
+                            <p>
+                                <a href = "https://github.com/njiang747/Painting426"><b>Pic2Paint</b></a> | COS 426: Computer Graphics | May 2016<br>
+                                Final project that renders pictures in painted styles inspired by a variety of artistic movements. Built upon the framework provided by earlier assignments and based on techniques published in Aaron Hertzmann’s paper, <i>Painterly Rendering with Curved Brush Strokes of Multiple Sizes</i>.
+                            </p>
+                            <p>
+                                <a href = "https://github.com/njiang747/kweri"><b>Kweri</b></a> | COS 333: Advanced Programming Techniques | Spring 2016<br>
+                                Web application built with Meteor, focused on providing streamlined communication between students and professors in the classroom. Personally implemented much of the application logic, database structure, and UI design. 
+                            </p>
+                            <p>
+                                <a href = "https://github.com/ericawu/free-space"><b>Free-Space</b></a> | HackPrinceton | Apr 2016<br>
+                                <i>Winner of the Best Internet of Things Hack Prize</i><br>
+                                Meteor web application that uses modular sensors to deliver real-time information about the availability of study carrels, music practice rooms, and more around campus. Personally focused on the software components, implementing the web layout, underlying logic, and database design. 
+                            </p>
+                            <div class="resume_section">
+                                Skills
+                            </div>
+                            <p>
+                                <b>Languages:</b> Java, C, JavaScript, HTML and CSS, Python, OCaml<br>
+                                <b>Other:</b> Experience with Git, x86-64 Assembly, Meteor, Android
+                            </p>
+                        </div>
+                        <div class="visible-xs">
+                            <div class="resume_section">
+                                Education
+                            </div>
+                            <p>
+                                <b>Princeton University</b> | GPA: 3.9<br>
+                                Princeton, NJ | 2014-2018<br>
+                                <i>B.S.E. Computer Science Major</i><br>
+                            </p>
+                            <p>
+                                <b>Milton Academy</b><br>
+                                Milton, MA | 2010 - 2014<br>
+                            </p>
+                            <div class="resume_section">
+                                Experience
+                            </div>
+                            <p>
+                                <b>Stroz Friedberg</b><br>
+                                <i>Cyber Summer Associate</i><br>
+                                Boston, MA | Summer 2016
+                            </p>
+                            <p>
+                                <b>Princeton University</b><br>
+                                <i>Computer Science Lab TA</i><br>
+                                Princeton, NJ | Jan 2016 - Present
+                            </p>
+                            <p>
+                                <b>CIeNET Technologies</b><br>
+                                <i>Android Developer - Summer Intern</i><br>
+                                Santa Clara, CA | Summer 2015
+                            </p>
+                            <div class="resume_section">
+                                Projects
+                            </div>
+                            <p>
+                                <a href = "https://github.com/njiang747/Painting426"><b>Pic2Paint</b></a> | May 2016<br>
+                                COS 426: Computer Graphics
+                            </p>
+                            <p>
+                                <a href = "https://github.com/njiang747/kweri"><b>Kweri</b></a> | Spring 2016<br>
+                                COS 333: Advanced Programming Techniques
+                            </p>
+                            <p>
+                                <a href = "https://github.com/ericawu/free-space"><b>Free-Space</b></a> | Apr 2016<br>
+                                HackPrinceton<br>
+                                <i>Winner of the Best IoT Hack Prize</i>
+                            </p>
+                            <div class="resume_section">
+                                Skills
+                            </div>
+                            <p>
+                                <b>Languages:</b> Java, C, JavaScript, HTML and CSS, Python, OCaml<br>
+                                <b>Other:</b> Experience with Git, x86-64 Assembly, Meteor, Android
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact_page" class="page center-page display_none" index=4>
+                <div id="contact_page_container" class="container">
+                    <hr>
+                    <h2 class="title-text text-center">Contact</h2>
+                    <hr>
+                    <div id="contact_page_inner_container">
+                        <img id="contact_page_pic" class="img-circle" src="resources/media/portrait_icon.jpg" alt="">
+                        <table id="contact_page_table">
+                            <tr>
+                                <td>
+                                    NAME:
+                                </td>
+                                <td>
+                                    Nicholas C. Jiang
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    EMAIL:
+                                </td>
+                                <td>
+                                    nj3@princeton.edu
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    PHONE:
+                                </td>
+                                <td>
+                                    (617) 688&ndash;7474
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

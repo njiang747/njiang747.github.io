@@ -52,6 +52,20 @@ function setup() {
             bg.style.height = (bg.offsetHeight + 60) + "px";
         }
 
+        // Mouseover effects
+        document.getElementById("starry_text").addEventListener("mouseenter", function(e) {
+            var popup = document.getElementById("popup");
+            popup.style.backgroundImage = "url('resources/media/starry_night.jpg')";
+            document.getElementById("all").classList.add("blur");
+            popup.classList.remove("display_none");
+        });
+        document.getElementById("starry_text").addEventListener("mouseleave", function(e) {
+            var popup = document.getElementById("popup");
+            document.getElementById("all").classList.remove("blur");
+            popup.classList.add("display_none");
+        });
+
+        // Open the start page
         var start_page = window.location.hash ? window.location.hash.split("#")[1] + "_page" : "home_page";
         document.getElementById(start_page).classList.add("transparent");
 
