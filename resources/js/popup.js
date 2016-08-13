@@ -1,3 +1,4 @@
+var popup_open_delay;
 var popup_transition;
 
 function popup_setup() {
@@ -8,14 +9,20 @@ function popup_setup() {
 }
 
 function mouse_over_setup(elt, bg) {
-    elt.addEventListener("mouseenter", function(e) {
-        var args = {
-            bgImg: bg
-        }
-        popup_open(args);
+    // Better mouseover, delay, popup, disappear on move
+    elt.addEventListener("mousemove", function(e) {
+        popup_close();
+        clearTimeout(popup_open_delay);
+        popup_open_delay = setTimeout(function() {
+            var args = {
+                bgImg: bg
+            }
+            popup_open(args);
+        }, 100);
     });
     elt.addEventListener("mouseleave", function(e) {
         popup_close();
+        clearTimeout(popup_open_delay);;
     });
 }
 
@@ -34,10 +41,12 @@ function popup_open(args) {
 
 function popup_close() {
     var popup = document.getElementById("popup");
+    if (!popup.classList.contains("display_none")) {
     document.getElementById("all").classList.remove("blur");
     popup.classList.add("transparent");
-    clearTimeout(popup_transition);
-    popup_transition = setTimeout(function() {
-        popup.classList.add("display_none");
-    }, 500);
+        clearTimeout(popup_transition);
+        popup_transition = setTimeout(function() {
+            popup.classList.add("display_none");
+        }, 500);
+    }
 }

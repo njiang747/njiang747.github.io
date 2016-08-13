@@ -103,10 +103,10 @@ a:hover {
     padding: 5px 35px;
     letter-spacing: 3px;
     font-size: 1.2em;
-    color: #777;
+    color: #888;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.5s, color 0.1s;
+    transition: all 0.5s, color 0.5s;
     z-index: 10;
 }
 
@@ -196,7 +196,6 @@ a:hover {
 }
 
 #about_page_container p .tooltip .tooltip_text {
-    visibility: hidden;
     position: absolute;
     z-index: 1;
     bottom: 100%;
@@ -208,15 +207,21 @@ a:hover {
     color: #fff;
     text-align: center;
     white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 #about_page_container p .tooltip:hover .tooltip_text {
-    visibility: visible;
+    opacity: 1;
 }
 
 #about_page_pic {
     max-width: 300px; 
     border: 2px solid #555;
+}
+
+#project_page p {
+    text-align: justify;
 }
 
 .project-pane {
@@ -229,7 +234,6 @@ a:hover {
 
 #starry_text {
     font-style: italic;
-    /*font-weight: bold;*/
     color: #314b9f;
 }
 
