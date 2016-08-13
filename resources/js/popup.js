@@ -8,9 +8,9 @@ function popup_setup() {
         click_setup(document.getElementById("project_img_pic2paint"), "url('resources/media/pic2paint_pic.gif')");
         click_setup(document.getElementById("project_img_kweri"), "url('resources/media/kweri_pic.png')");
         click_setup(document.getElementById("project_img_freespace"), "url('resources/media/freespace_pic.png')");
-        document.getElementById("popup").addEventListener("click", function(e) {
-            popup_close();
-        });
+        // document.getElementById("popup").addEventListener("click", function(e) {
+        //     popup_close();
+        // });
     } else {
         mouse_over_setup(document.getElementById("starry_text"), "url('resources/media/starry_night.jpg')");
         mouse_over_setup(document.getElementById("project_img_pic2paint"), "url('resources/media/pic2paint_pic.gif')");
