@@ -1,5 +1,6 @@
 var popup_open_delay;
 var popup_transition;
+var popup_open = false;
 
 function popup_setup() {
     mouse_over_setup(document.getElementById("starry_text"), "url('resources/media/starry_night.jpg')");
@@ -8,8 +9,8 @@ function popup_setup() {
     mouse_over_setup(document.getElementById("project_img_freespace"), "url('resources/media/freespace_pic.png')");
 
     if (window.innerWidth <= 813) {
-        document.body.addEventListener("mousedown", function(e) {
-            if (!document.getElementById("popup").classList.contains("display_none")) {
+        document.body.addEventListener("click", function(e) {
+            if (popup_open) {
                 popup_close();
             }
         });
@@ -44,6 +45,9 @@ function popup_open(args) {
     clearTimeout(popup_transition);
     popup_transition = setTimeout(function() {
         popup.classList.remove("transparent");
+        setTimeout(function() {
+            popup_open = true;
+        }, 500);
     }, 10);
 }
 
@@ -55,6 +59,7 @@ function popup_close() {
         clearTimeout(popup_transition);
         popup_transition = setTimeout(function() {
             popup.classList.add("display_none");
+            popup_open = false;
         }, 500);
     }
 }
