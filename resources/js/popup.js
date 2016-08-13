@@ -1,6 +1,5 @@
 var popup_open_delay;
 var popup_transition;
-var popup_is_open = false;
 
 function popup_setup() {
     if (window.innerWidth <= 813) {
@@ -8,17 +7,11 @@ function popup_setup() {
         click_setup(document.getElementById("project_img_pic2paint"), "url('resources/media/pic2paint_pic.gif')");
         click_setup(document.getElementById("project_img_kweri"), "url('resources/media/kweri_pic.png')");
         click_setup(document.getElementById("project_img_freespace"), "url('resources/media/freespace_pic.png')");
-        document.body.addEventListener("click", function(e) {
-            if (popup_is_open) {
-                e.preventDefault();
-                var elts = document.getElementsByClassName("popup_trigger");
-                for (var i = 0; i < elts.length; i++) {
-                    elts[i].classList.remove("pointer_none");
-                }
-                popup_close();
-            }
+        document.getElementById("popup").addEventListener("click", function(e) {
+            popup_close();
         });
     } else {
+        document.getElementById("popup").classList.add("pointer_none");
         mouse_over_setup(document.getElementById("starry_text"), "url('resources/media/starry_night.jpg')");
         mouse_over_setup(document.getElementById("project_img_pic2paint"), "url('resources/media/pic2paint_pic.gif')");
         mouse_over_setup(document.getElementById("project_img_kweri"), "url('resources/media/kweri_pic.png')");
@@ -30,7 +23,6 @@ function click_setup(elt, bg) {
     elt.addEventListener("click", function(e) {
         popup_close();
         clearTimeout(popup_open_delay);
-        elt.classList.add("pointer_none");
         popup_open_delay = setTimeout(function() {
             var args = {
                 bgImg: bg
@@ -68,9 +60,6 @@ function popup_open(args) {
     clearTimeout(popup_transition);
     popup_transition = setTimeout(function() {
         popup.classList.remove("transparent");
-        setTimeout(function() {
-            popup_is_open = true;
-        }, 500);
     }, 10);
 }
 
@@ -82,7 +71,6 @@ function popup_close() {
         clearTimeout(popup_transition);
         popup_transition = setTimeout(function() {
             popup.classList.add("display_none");
-            popup_is_open = false;
         }, 500);
     }
 }
