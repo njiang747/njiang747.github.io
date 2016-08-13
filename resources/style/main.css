@@ -237,8 +237,10 @@ a:hover {
     position: absolute;
     width: 24px;
     height: 24px;
-    top: 7px;
+    top: 0;
+    bottom: 0;
     right: 20px;
+    margin: auto 0;
 }
 
 .github_icon {
