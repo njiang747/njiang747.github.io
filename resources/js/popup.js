@@ -1,6 +1,6 @@
 var popup_open_delay;
 var popup_transition;
-var popup_open = false;
+var popup_is_open = false;
 
 function popup_setup() {
     mouse_over_setup(document.getElementById("starry_text"), "url('resources/media/starry_night.jpg')");
@@ -10,7 +10,7 @@ function popup_setup() {
 
     if (window.innerWidth <= 813) {
         document.body.addEventListener("click", function(e) {
-            if (popup_open) {
+            if (popup_is_open) {
                 popup_close();
             }
         });
@@ -46,7 +46,7 @@ function popup_open(args) {
     popup_transition = setTimeout(function() {
         popup.classList.remove("transparent");
         setTimeout(function() {
-            popup_open = true;
+            popup_is_open = true;
         }, 500);
     }, 10);
 }
@@ -59,7 +59,7 @@ function popup_close() {
         clearTimeout(popup_transition);
         popup_transition = setTimeout(function() {
             popup.classList.add("display_none");
-            popup_open = false;
+            popup_is_open = false;
         }, 500);
     }
 }
