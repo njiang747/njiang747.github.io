@@ -380,6 +380,10 @@ a:hover {
     user-select: none;
 }
 
+.pointer_none {
+    pointer-events:none;
+}
+
 #popup {
     width: 90%;
     height: 90%;
@@ -387,8 +391,7 @@ a:hover {
     top: 5%;
     left: 5%;
     background: transparent center no-repeat;
-    background-size: contain;
-    pointer-events:none;
+    background-size: contain;    
     z-index: 10;
     transition: opacity 0.5s;
 }

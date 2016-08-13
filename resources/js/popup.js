@@ -8,8 +8,10 @@ function popup_setup() {
     mouse_over_setup(document.getElementById("project_img_freespace"), "url('resources/media/freespace_pic.png')");
 
     if (window.innerWidth <= 813) {
-        document.body.addEventListener("click", function() {
-            popup_close();
+        document.body.addEventListener("click", function(e) {
+            if (!document.getElementById("popup").classList.contains("display_none")) {
+                popup_close();
+            }
         });
     }
 }
