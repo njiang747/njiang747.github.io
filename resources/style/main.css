@@ -262,25 +262,6 @@ a:hover {
     position: relative;
 }
 
-/*#resume_page_download_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 0;
-    margin-right: 50px;
-    margin-top: 30px;
-    background: url('../media/download.png') no-repeat;
-    background-size: contain;
-}
-
-#resume_page_download_button:hover {
-    background: url('../media/download_hover.png') no-repeat;
-    background-size: contain;
-}*/
-
 #resume_page_inner_container {
     padding: 20px 60px 30px 60px;
     box-sizing: border-box;
@@ -339,7 +320,7 @@ a:hover {
 
 .img-circle {
     border-radius: 50%;
-    border: 3px solid #3ba9b1;
+    border: 3px solid #555;
 }
 .img-border {
     max-width: 100%;
