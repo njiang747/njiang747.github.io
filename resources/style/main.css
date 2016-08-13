@@ -196,6 +196,7 @@ a:hover {
 }
 
 #about_page_container p .tooltip .tooltip_text {
+    visibility: hidden;
     position: absolute;
     z-index: 1;
     bottom: 100%;
@@ -212,6 +213,7 @@ a:hover {
 }
 
 #about_page_container p .tooltip:hover .tooltip_text {
+    visibility: visible;
     opacity: 1;
 }
 
