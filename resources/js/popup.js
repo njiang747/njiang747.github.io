@@ -10,7 +10,7 @@ function popup_setup() {
     if (window.innerWidth <= 813) {
         document.body.addEventListener("click", function(e) {
             if (!document.getElementById("popup").classList.contains("display_none")) {
-                popup_close();
+                // popup_close();
             }
         });
     }
