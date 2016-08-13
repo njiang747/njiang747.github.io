@@ -6,6 +6,12 @@ function popup_setup() {
     mouse_over_setup(document.getElementById("project_img_pic2paint"), "url('resources/media/pic2paint_pic.gif')");
     mouse_over_setup(document.getElementById("project_img_kweri"), "url('resources/media/kweri_pic.png')");
     mouse_over_setup(document.getElementById("project_img_freespace"), "url('resources/media/freespace_pic.png')");
+
+    if (window.innerWidth <= 813) {
+        document.body.addEventListener("click", function() {
+            popup_close();
+        });
+    }
 }
 
 function mouse_over_setup(elt, bg) {
