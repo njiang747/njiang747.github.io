@@ -7,6 +7,7 @@ function popup_setup() {
         click_setup(document.getElementById("project_img_pic2paint"), "url('resources/media/pic2paint_pic.gif')");
         click_setup(document.getElementById("project_img_kweri"), "url('resources/media/kweri_pic.png')");
         click_setup(document.getElementById("project_img_freespace"), "url('resources/media/freespace_pic.png')");
+        document.getElementById("popup").classList.add("pointer_none");
         document.getElementById("popup").addEventListener("click", function(e) {
             popup_close();
         });
@@ -24,6 +25,7 @@ function click_setup(elt, bg) {
         popup_close();
         clearTimeout(popup_open_delay);
         popup_open_delay = setTimeout(function() {
+            document.getElementById("popup").classList.remove("pointer_none");
             var args = {
                 bgImg: bg
             }
