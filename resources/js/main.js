@@ -5,7 +5,7 @@ window.onload = function() {
     hotkey_setup();
     hammer_setup();
     background_setup();
-    popup_setup();
+    // popup_setup();
     setup();
 }
 
