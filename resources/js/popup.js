@@ -66,8 +66,8 @@ function popup_open(args) {
 function popup_close() {
     var popup = document.getElementById("popup");
     if (!popup.classList.contains("display_none")) {
-    document.getElementById("all").classList.remove("blur");
-    popup.classList.add("transparent");
+        document.getElementById("all").classList.remove("blur");
+        popup.classList.add("transparent");
         clearTimeout(popup_transition);
         popup_transition = setTimeout(function() {
             popup.classList.add("display_none");

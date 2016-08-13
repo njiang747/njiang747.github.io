@@ -117,6 +117,8 @@ function open_page(page_val) {
         return;
     }
 
+    popup_close();
+
     if (page_name == "home_page") {
         document.getElementById("nav_bar").classList.remove("mini-nav");
     } else {
