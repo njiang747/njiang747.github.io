@@ -226,10 +226,31 @@ a:hover {
 
 .project-pane {
     margin-top: 30px;
+    position: relative;
 }
 
 .project-pane img {
     margin-top: 15px;
+}
+
+.github_icon_container {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 7px;
+    right: 20px;
+}
+
+.github_icon {
+    width: 100%;
+    height: 100%;
+    background: url('../media/github_icon.png') center no-repeat;
+    background-size: contain;
+}
+
+.github_icon:hover {
+    background: url('../media/github_icon_dark.png') center no-repeat;
+    background-size: contain;
 }
 
 #starry_text {
@@ -308,6 +329,7 @@ a:hover {
 
 .mini-title {
     margin-bottom: 20px;
+    position: relative;
 }
 
 .mini-title hr {
