@@ -2,17 +2,16 @@ var popup_open_delay;
 var popup_transition;
 
 function popup_setup() {
+    document.getElementById("popup").classList.add("pointer_none");
     if (window.innerWidth <= 813) {
         click_setup(document.getElementById("starry_text"), "url('resources/media/starry_night.jpg')");
         click_setup(document.getElementById("project_img_pic2paint"), "url('resources/media/pic2paint_pic.gif')");
         click_setup(document.getElementById("project_img_kweri"), "url('resources/media/kweri_pic.png')");
         click_setup(document.getElementById("project_img_freespace"), "url('resources/media/freespace_pic.png')");
-        document.getElementById("popup").classList.add("pointer_none");
         document.getElementById("popup").addEventListener("click", function(e) {
             popup_close();
         });
     } else {
-        document.getElementById("popup").classList.add("pointer_none");
         mouse_over_setup(document.getElementById("starry_text"), "url('resources/media/starry_night.jpg')");
         mouse_over_setup(document.getElementById("project_img_pic2paint"), "url('resources/media/pic2paint_pic.gif')");
         mouse_over_setup(document.getElementById("project_img_kweri"), "url('resources/media/kweri_pic.png')");
