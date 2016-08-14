@@ -11,7 +11,7 @@ window.onload = function() {
 
 function setup() {
     var delay = 3000;
-    if ((window.location.hash && window.location.hash != "#home") || window.innerWidth <= 813) {
+    if ((window.location.hash && window.location.hash != "#home") || isMobile()) {
         delay = 10;
     }
     setTimeout(function () {    
@@ -62,7 +62,7 @@ function setup() {
 }
 
 function background_setup() {
-    if ((window.location.hash && window.location.hash != "#home") || window.innerWidth <= 813) {
+    if ((window.location.hash && window.location.hash != "#home") || isMobile()) {
        document.getElementById("bg").style.backgroundImage = "url('resources/media/bg.png')";
        return;
     }
