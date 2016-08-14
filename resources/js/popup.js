@@ -34,7 +34,6 @@ function click_setup(elt, bg) {
 }
 
 function mouse_over_setup(elt, bg) {
-    // Better mouseover, delay, popup, disappear on move
     elt.addEventListener("mousemove", function(e) {
         popup_close();
         clearTimeout(popup_open_delay);
