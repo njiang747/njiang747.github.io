@@ -5,8 +5,10 @@ window.onload = function() {
     hotkey_setup();
     hammer_setup();
     background_setup();
-    popup_setup();
+    // popup_setup();
     setup();
+
+    PDFObject.embed("resources/media/resume.pdf", "#resume_page_container_inner");
 }
 
 function setup() {
