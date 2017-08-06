@@ -82,7 +82,7 @@ function hotkey_setup() {
             open_page(cur_page_num + 1);
         }
     });
-}
+}   
 
 function hammer_setup() {
     if (!isMobile()) {
